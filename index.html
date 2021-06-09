@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <title>Famita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+
+    <a href="#home" class="carret-up"><i class="fas fa-angle-up"></i></a>
+    
+    <nav>
+        <div class="nav-bar">
+            <div class="f-nav">
+                <h1><a href="#">Famita</a></h1>
+                <ul>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BLOGS</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PAGES</a></li>
+                </ul>
+            </div>
+            
+            <div class="s-nav">
+                <ul>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="far fa-heart"><span>0</span></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"><span>0</span></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="res-nav">
+            <div class="first-res">
+                <h1>Famita</h1>
+                <div class="res-notif">
+                    <a href="#">
+                        <i class="far fa-heart"><span>0</span></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"><span>0</span></i>
+                    </a>
+                    <i class="fas fa-bars responsive"></i>
+                </div>
+                    
+            </div>
+            
+            <div class="res-icon">
+                <ul>
+                    <li>
+                        <form>
+                            <input type="text" class="res-form">
+                            <button class="res-btn"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BLOGS</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PAGES</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="header" id="home">
+        <div class="info">
+            <h3>DISCOVER NOW LATEST COLLECTION</h3>
+            <h1>Spring Collection 2018</h1>
+            <a href="#">SHOP NOW &nbsp;&nbsp; <i class="fas fa-angle-right"></i></a>
+        </div>
+
+        <!-- <div class="slide-numb">
+            <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+            </ul>
+        </div> -->
+    </div>
+
+    <div class="container">
+        <div class="new-products">
+            <div class="products">
+                <h1>New Arrivals</h1>
+                <p>FREE DELIVERY FROM USA AND EASY RETURNS</p>
+            </div>
+    
+            <div class="featured-products">
+                <div class="product">
+                    <img src="images/promo-1.jpg" alt="">
+                    <h1>Windrunner Jacket</h1>
+                    <p><span>$9.99</span><br><span class="discount">Before: $12.99</span></p>
+                </div>
+    
+                <div class="product">
+                    <!-- <div class="sale">
+                        <span>Sale!</span>
+                    </div> -->
+                    <img src="images/promo-2.jpg" alt="">
+                    <h1>Running Shoes</h1>
+                    <p><span>$10.99</span></p>
+                </div>
+    
+                <div class="product">
+                    <img src="images/promo-3.jpg" alt="">
+                    <h1>Hiking Backpack</h1>
+                    <p><span>$4.99</span></p>
+                </div>
+    
+                <div class="product">
+                    <img src="images/promo-4.jpg" alt="">
+                    <h1>Jogging Pants</h1>
+                    <p><span>$6.99</span></p>
+                </div>
+            </div>
+    
+            <div class="promo-products">
+                <div class="promo-product">
+                    <img src="images/discount-1.jpg" alt="">
+                    <h1>Mid Season Up To 50% Off</h1>
+                    <a href="#">SHOP NOW</a>
+                </div>
+    
+                <div class="promo-product">
+                    <img src="images/discount-2.jpg" alt="">
+                    <h1>HandBag Up To 30% Off</h1>
+                    <a href="#">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="popular-products">
+            <div class="popular-title">
+                <h1>Popular Products</h1>
+                <p>FREE DELIVERY FROM USA AND EASY RETURNS</p>
+            </div>
+    
+            <div class="popular-product-lists">
+                <div class="popular-product-list">
+                    <img src="images/popular-1.jpg" alt="">
+                    <h3>Twice Hoodie</h3>
+                    <p>$20.99</p>
+                    <ul>
+                        <li class="review"><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>
+                </div>
+    
+                <div class="popular-product-list">
+                    <img src="images/popular-2.jpg" alt="">
+                    <h3>Pandora's Hat</h3>
+                    <p>$13.99</p>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>
+                </div>
+    
+                <div class="popular-product-list">
+                    <img src="images/popular-3.png" alt="">
+                    <h3>Nike Shoes</h3>
+                    <p>16.99</p>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>
+                </div>
+    
+                <div class="popular-product-list">
+                    <img src="images/popular-4.jpg" alt="">
+                    <h3>Razer Face Mask</h3>
+                    <p>$10.00</p>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="blog">
+            <div class="blog-title">
+                <h1>Our Latest Blogs</h1>
+                <p>Trending Fashion Styles</p>
+            </div>
+    
+            <div class="blog-imgs">
+                <div class="blog-img">
+                    <img src="images/blog-1.jpg" alt="">
+                </div>
+    
+                <div class="blog-img">
+                    <img src="images/blog-2.jpg" alt="">
+                </div>
+    
+                <div class="blog-img">
+                    <img src="images/blog-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="newsletter">
+            <div class="newsletter-title">
+                <h1>Subscribe to our Newsletter</h1>
+                <p>Subscribe to our newsletter and get 10% off your first purchase</p>
+            </div>
+
+            <div class="newsletter-form">
+                <form method="post">
+                    <input type="text" class="newsletter-input" placeholder="You Email here....">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="services">
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <div class="service-desc">
+                    <h3>FREE DELIVERY</h3>
+                    <p>For all order over US</p>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="service-desc">
+                    <h3>30 DAYS RETURN</h3>
+                    <p>If goods have Problems</p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <i class="far fa-credit-card"></i>
+                </div>
+                <div class="service-desc">
+                    <h3>SECURE PAYMENT</h3>
+                    <p>100% Secure payment</p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="service-desc">
+                    <h3>24/7 SUPPORT</h3>
+                    <p>Dedicated Support</p>
+                </div>
+            </div>                
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="footer">
+            <div class="payment">
+                <h1>Famita</h1>
+                <p>&copy; Copyright 2021 Famita</p>
+                <ul>
+                    <li><a href="#"><i class="fab fa-cc-amazon-pay"></i></a></li>
+                    <li><a href="#"><i class="fab fa-cc-apple-pay"></i></a></li>
+                    <li><a href="#"><i class="fab fa-cc-paypal"></i></a></li>
+                    <li><a href="#"><i class="fab fa-cc-mastercard"></i></a></li>
+                    <li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="accounts">
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Orders Tracking</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+
+            <div class="contacts">
+                <h1>+01-3-888-6868</h1>
+                <p>38 Block Street, Sydney, Australia</p>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
